@@ -12,18 +12,22 @@ export PATH=${PATH}:$JAVA_HOME/bin
 ```
 
 4. Create symlink
-`
+```
 sudo ln -s /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/server/libjvm.dylib /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/lib/libserver.dy
-`
+```
 
 5. Add arguments
-In `libnvvp/nvvp.app/Contents/MacOS/nvvp.ini`
+In `libnvvp/nvvp.app/Contents/MacOS/nvvp.ini`, add 
+
+```
 -d64
 -vmargs
 -Xms2g
 -Xmx22g
 -XX:+UseConcMarkSweepGC
 -XX:+CMSIncrementalMode
+```
+
 
 6. Add on App drawer
 
