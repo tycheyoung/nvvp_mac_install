@@ -2,7 +2,10 @@
 -----------
 0. Download nvvp zip file from NVIDIA webpage [LINK](https://developer.nvidia.com/nvidia-cuda-toolkit-developer-tools-mac-hosts)
 1. Disable gatekeeper for nvvp folder
+
+```
 sudo xattr -rd com.apple.quarantine ./nvvp
+```
 
 2. Install Zulu - 1.8.151 jdk [LINK](https://www.azul.com/downloads/zulu-community/?version=java-8-lts&os=macos&architecture=x86-64-bit&package=jdk&show-old-builds=true)
 3. Add JAVA_HOME and PATH - Add below on `.zshrc`
