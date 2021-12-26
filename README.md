@@ -17,7 +17,8 @@ sudo ln -s /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/se
 ```
 
 5. Add arguments
-In `libnvvp/nvvp.app/Contents/MacOS/nvvp.ini`, add 
+
+On `libnvvp/nvvp.app/Contents/MacOS/nvvp.ini`, add 
 
 ```
 -d64
