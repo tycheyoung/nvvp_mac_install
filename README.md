@@ -5,8 +5,11 @@
 sudo xattr -rd com.apple.quarantine ./nvvp
 
 2. Install Zulu - 1.8.151 jdk (https://www.azul.com/downloads/zulu-community/?version=java-8-lts&os=macos&architecture=x86-64-bit&package=jdk&show-old-builds=true)
-3. Add JAVA_HOME and path (already reflected in .zshrc of this dotfiles)
-/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+3. Add JAVA_HOME and PATH - Add below on `.zshrc`
+```
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+export PATH=${PATH}:$JAVA_HOME/bin
+```
 
 4. Create symlink
 sudo ln -s /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/server/libjvm.dylib /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/lib/libserver.dy
