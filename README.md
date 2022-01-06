@@ -7,7 +7,7 @@
 sudo xattr -rd com.apple.quarantine ./nvvp
 ```
 
-2. Install Zulu - 1.8.151 jdk [LINK](https://www.azul.com/downloads/zulu-community/?version=java-8-lts&os=macos&architecture=x86-64-bit&package=jdk&show-old-builds=true)
+2. Install Zulu - 1.8.141 jdk [LINK](https://www.azul.com/downloads/zulu-community/?version=java-8-lts&os=macos&architecture=x86-64-bit&package=jdk&show-old-builds=true)
 3. Add JAVA_HOME and PATH - Add below on `.zshrc`
 ```
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
